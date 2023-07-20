@@ -1,0 +1,131 @@
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100%;
+  background-color: #a5b5b2;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.Encabezado,.Footer{
+  background-color: black;
+  color: silver;
+  text-align: center;
+  
+}
+.Encabezado{
+  font-size: 130%;
+  margin-bottom: 2%;
+}
+
+.Cuerpo{
+
+  width: 100%;
+  position: relative;
+  min-height: 100vh;
+
+}
+.Marcador{
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.ParrafoInstruccion{
+  align-self: center;
+  font-size: 115%;
+}
+.ContenidoMarcador{
+  width: 100%;
+  margin-top: 2%;
+
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+}
+.BloquesMarcador{
+  flex-basis: 33.3%;
+  text-align: center;
+  border-right: 1px solid black;
+}
+.BloqueUsuario,.PuntosUsuario{
+  background-color:  #99a8e0;
+}
+.BloquePC,.PuntosPC{
+  background-color: #e0a999;
+}
+.Ronda{
+  background-color: #f0eded;
+}
+.PuntosPC{
+  border: 0;
+}
+.BloqueImagenes{
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+.BloquesImagenes{
+  flex-basis: 100%;
+  text-align: center;
+  border: 1px solid black;
+  padding: 1.5%;
+  height: 440px;
+}
+.Imagen{
+  margin-top: 3%;
+  width: 70%;
+  height: 70%;
+  border: 1px solid;
+  margin-bottom: 2%;
+}
+.Botones{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.BloqueBotones{
+  margin: 2% 0;
+  flex-basis: 100%;
+  display: flex;
+}
+.Boton{
+  flex-basis: 45%;
+  font-size: 140%;
+  padding: 1%;
+  margin: 0 2%;
+  cursor: pointer;
+}
+
+@media (min-width:950px){
+  .BloquesImagenes{
+    flex-basis: 50%;
+    flex-direction: row;
+
+  }
+  .BloqueBotones{
+    flex-basis: 50%;
+  }
+  .Botones{
+    flex-direction: row;
+  }
+
+  
+}
